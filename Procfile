@@ -1,1 +1,1 @@
-web: python snap.py
+web: python sn.py
