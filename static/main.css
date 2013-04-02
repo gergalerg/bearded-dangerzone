@@ -1,0 +1,65 @@
+html, body, div, span, h1, h2, p, a, ul, li, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+:focus {
+	outline: 0;
+}
+a	{
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+#container {
+	white-space: nowrap;
+	overflow: hidden;
+	height: 10em;
+	width: 100%;
+}
+
+#container li {
+	display: inline-block;
+	width: 10em;
+}
+
+#container li img {
+	width: 10em;
+	float: left;
+}
+
+.full_size {
+	list-style-type: none;
+	transition: opacity 1s ease-in-out;
+}
+
+.full_size img {
+	max-width: 100%;
+}
+
+.top img {
+	opacity: 0;
+}
+
+
+#buttons {
+	width: 100%;
+}
+#slideLeft {
+	float: right;
+}

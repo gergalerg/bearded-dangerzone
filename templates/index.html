@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Snapguide API Example</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" type="text/css" media="screen" />
+	<script type="text/javascript" src="{{ url_for('static', filename='javascript.js') }}"></script>
+	<script>
+	var json_api = {{ data|tojson|safe }}
+	</script>
+</head>
+<body onload="sourceTags();">
+	<div class="wrapper">
+		<div id="container">
+			<ul>
+			{% for item in data.guide.media %}
+			<li><img src="http://images.snapguide.com/images/guide/{{ item }}/300x294_ac.jpg" alt="" /></li>
+			{% endfor %}
+			</ul>
+		</div>
+		<div id="buttons">
+			<button id="slideRight" type="button">Go Left</button>
+			<button id="slideLeft" type="button">Go Right</button>
+		</div>
+		<div class="full_size">
+		<img src="http://images.snapguide.com/images/guide/ef0a59935f214b35a103ef255d9a810b/original.jpg" alt="" /></div>
+	</div>
+</body>
+</html>
