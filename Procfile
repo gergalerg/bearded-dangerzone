@@ -1,1 +1,1 @@
-web: python sn.py
+web: python flasky.py
